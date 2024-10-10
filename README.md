@@ -20,7 +20,11 @@ We have 3 Devcontainers pre-build script in this repository:
 3. Use the [Devcontainer CLI](https://github.com/devcontainers/cli) to build the Devcontainer:
 
    ```bash
+   devcontainer build --workspace-folder ./ --config ./.devcontainer/js-dev/devcontainer.json --platform "linux/amd64" --image-name ghcr.io/tdd-workshops/devcontainer-js --push true
+
    devcontainer build --workspace-folder ./ --config ./.devcontainer/python-dev/devcontainer.json --platform "linux/amd64" --image-name ghcr.io/tdd-workshops/devcontainer-python --push true
+
+   devcontainer build --workspace-folder ./ --config ./.devcontainer/java-dev/devcontainer.json --platform "linux/amd64" --image-name ghcr.io/tdd-workshops/devcontainer-java --push true
    ```
 
    > PS: This command will let you push directly to the Docker registry.
